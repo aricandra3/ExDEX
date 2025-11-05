@@ -45,8 +45,37 @@ const NavBar = () => {
             ))}
           </div>
         </div>
-        <div className={Style.NavBar_box_right}>Right</div>
+        {/* MIDDLE SIDE */}
+        <div className={Style.NavBar_box_middle}>
+          <div className={Style.NavBar_box_middle_search}>
+            <div  className={Style.NavBar_box_middle_search_img}>
+              <Image src={images.search} alt="search" width={20} height={20} />
+            </div>
+            {/* INPUT FIELD */}
+            <input type ="text" placeholder='Search Token' 
+            className={Style.NavBar_box_middle_input} />
+          </div>
+        </div>
+        {/* RIGHT SIDE */}
+        <div className={Style.NavBar_box_right}>
+          <div className={Style.NavBar_box_right_box}>
+            <div classname={Style.NavBar_box_right_box_img}>
+              <Image src={images.ether} alt="Network" width={30} height={30} />
+            </div>
+            <p>Network Name</p>
+            <button onClick={() => {}}>Address</button>
+          </div>
+
+          {openModel && (
+            <Model setOpenModel={setOpenModel} connectWallet="Connect" />
+          )}
+        </div>
       </div>
+
+      {/* TOKENLIST COMPONENT */}
+      {openTokenbox && (
+        <TokenList tokenDate='hey' setOpenTokenbox={setOpenTokenbox} />
+      )}
     </div>
   );
 };
