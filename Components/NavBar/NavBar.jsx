@@ -63,7 +63,7 @@ const NavBar = () => {
               <Image src={images.ether} alt="Network" width={30} height={30} />
             </div>
             <p>Network Name</p>
-            <button onClick={() => {}}>Address</button>
+            <button onClick={() => setOpenModel(true)}>Address</button>
           </div>
 
           {openModel && (

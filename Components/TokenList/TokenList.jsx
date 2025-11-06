@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TokenList = () => {
+const TokenList = ({ tokenDate, setOpenTokenBox}) => {
   return (
     <div>
       TokenList
