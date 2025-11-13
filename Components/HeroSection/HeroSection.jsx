@@ -69,7 +69,7 @@ const HeroSection = ({ accounts, tokenData }) => {
 
       {openSetting && <TokenList setOpenTokenbox={setOpenSetting} />}
 
-      {/* Search modal untuk Token 1 */}
+      {/* Search modal for Token 1 */}
       {openTokenOne && (
         <SearchToken
           setOpenToken={setOpenTokenOne} 
@@ -78,7 +78,7 @@ const HeroSection = ({ accounts, tokenData }) => {
         />
       )}
 
-      {/* Search modal untuk Token 2 */}
+      {/* Search modal for Token 2 */}
       {openTokenTwo && (
         <SearchToken
           setOpenToken={setOpenTokenTwo}
