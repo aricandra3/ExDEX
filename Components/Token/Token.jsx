@@ -6,10 +6,14 @@ import images from '../../assets'
 import { Toggle } from '../index'
 
 
-const Token = () => {
+const Token = ({ openSetting }) => {
   return (
-    <div>
-      
+    <div className={Style.Token}>
+        <div className={Style.Token_box}>
+            <div className={Style.Token_box_heading}>
+                <h4>Setting</h4> 
+            </div>
+        </div>
     </div>
   )
 }
