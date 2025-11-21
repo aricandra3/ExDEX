@@ -6,7 +6,7 @@ import images from '../../assets'
 import { Toggle } from '../index'
 
 
-const Token = ({ openSetting }) => {
+const Token = ({ SetOpenSetting }) => {
   return (
     <div className={Style.Token}>
         <div className={Style.Token_box}>
@@ -15,7 +15,34 @@ const Token = ({ openSetting }) => {
                 <Image src={images.close}
                 alt='close'
                 width={50}
-                height={50}/> 
+                height={50}
+                onClick={()=>SetOpenSetting(false)}/> 
+            </div>
+            <p className={Style.Token_box_para}>
+                Slippage Tolerance{""}
+                <Image src={images.lock} alt="img" width={20} height={20} />
+            </p>
+
+            <div className={Style.Token_box_input}>
+                <button>Auto</button>
+                <input type="text" placeholder='0.10%' />
+            </div>
+
+            <p className={Style.Token_box_para}>
+                Slippage Tolerance{""}
+                <Image src={images.lock} alt="img" width={20} height={20} />
+            </p>
+
+            <div className={Style.Token_box_input}>
+                <input type="text" placeholder='30' />
+                <button>minutes</button>
+            </div>
+
+            <h2>Interface Setting</h2>
+
+            <div className={Style.Token_box_toggle}>
+                <p className={Style.Token_box_para}>Transaction Deadline</p>
+                <Toggle />
             </div>
         </div>
     </div>
