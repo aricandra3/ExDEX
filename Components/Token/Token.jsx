@@ -6,7 +6,7 @@ import images from '../../assets'
 import { Toggle } from '../index'
 
 
-const Token = ({ SetOpenSetting }) => {
+const Token = ({ setOpenSetting }) => {
   return (
     <div className={Style.Token}>
         <div className={Style.Token_box}>
@@ -16,7 +16,7 @@ const Token = ({ SetOpenSetting }) => {
                 alt='close'
                 width={50}
                 height={50}
-                onClick={()=>SetOpenSetting(false)}/> 
+                onClick={()=>setOpenSetting(false)}/> 
             </div>
             <p className={Style.Token_box_para}>
                 Slippage Tolerance{""}

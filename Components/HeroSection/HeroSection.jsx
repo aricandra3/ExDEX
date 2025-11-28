@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import Style from './HeroSection.module.css';
 import images from '../../assets';
-import { TokenList, SearchToken } from '../index';
+import { Token, SearchToken } from '../index';
 
 const HeroSection = ({ accounts, tokenData }) => {
   // STATE
@@ -67,7 +67,7 @@ const HeroSection = ({ accounts, tokenData }) => {
         )}
       </div>
 
-      {openSetting && <TokenList setOpenSetting={setOpenSetting} />}
+      {openSetting && <Token setOpenSetting={setOpenSetting} />}
 
       {/* Search modal for Token 1 */}
       {openTokenOne && (
