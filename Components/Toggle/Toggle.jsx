@@ -2,10 +2,20 @@ import React from 'react'
 
 import Style from './Toggle.module.css';
 
-const Toggle = () => {
+const Toggle = ({ label }) => {
   return (
-    <div>
-      Toggle
+    <div className={Style.toggle}>
+      <div className={Style.toggle_switch}>
+        <input type="checkbox" 
+        className={Style.Toggle_checkbox}
+        name={label}
+        id={label}
+        />
+        <label className={Style.Toggle_label} htmlFor={label}>
+          <span className={Style.Toggle_inner} />
+          <span className={Style.toggle_switch} />
+        </label>
+      </div>
     </div>
   )
 }
