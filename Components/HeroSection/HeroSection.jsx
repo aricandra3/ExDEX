@@ -70,7 +70,7 @@ const HeroSection = ({ accounts, tokenData }) => {
       {openSetting && <Token setOpenSetting={setOpenSetting} />}
 
       {/* Search modal for Token 1 */}
-      {openTokenOne && (
+      {!openTokenOne && (
         <SearchToken
           setOpenToken={setOpenTokenOne} 
           setToken={setTokenOne}          

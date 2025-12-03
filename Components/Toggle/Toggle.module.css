@@ -1,6 +1,10 @@
 .Toggle{
+    text-align: center;
+}
+
+.Toggle_switch_box {
     position: relative;
-    width: 75%;
+    width: 75px;
     display: inline-block;
     text-align: left;
     top: 8px;
@@ -39,15 +43,16 @@
 .Toggle_inner:before {
     content: "Yes";
     padding-left: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #cff80b;
+    color: black;
 }
 
-.Toggle_inner:before {
+.Toggle_inner::after {
     content: "No";
-    padding-left: 10px;
-    background-color: #4CAF50;
-    color: white;
+    padding-right: 10px;
+    background-color: #cff80b;
+    color: black;
+    text-align: right;
 }
 
 .Toggle_switch {
@@ -60,6 +65,7 @@
     bottom: 0;
     right: 40px;
     border: 0px solid #E0E0E0;
+    border-radius: 20px;
     transition: all 0.3s ease-in 0s;
 }
 
