@@ -32,7 +32,10 @@
     color: black;
 }
 
-
+.SearchToken_box_token {
+    margin-top: 1.5rem;
+    display: grid;
+}
 
 @media only screen and (max-width: 35em) {
     .SearchToken {
